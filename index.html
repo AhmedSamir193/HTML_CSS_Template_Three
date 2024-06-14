@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/koky.css">
-    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./CSS/koky.css">
+    <link rel="stylesheet" href="./CSS/normalize.css">
     <!-- Font Aweson Library -->
-    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>Loly</title>
-
+    <script defer src="./JS/main.js"></script>
 </head>
-
 <body>
+    <div class="scroller"></div>
     <!-- Start header -->
     <div class="header" id="header">
         <div class="container">
@@ -25,11 +26,13 @@
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#features">Features</a></li>
                 <li>
-                    <a href="#other-Links">Other Links</a>
+                    <a class="target-link" href="#other-Links">Other Links
+                        <i class="fa-solid fa-chevron-down menu"></i>
+                    </a>
                     <!-- Start Megamenu -->
                     <div class="mega-menu">
                         <div class="image">
-                            <img src="./css imgs/megamenu.png" alt="">
+                            <img src="./imgs/megamenu.png" alt="">
                         </div>
                         <ul class="links">
                             <li> <a href="#Testimonails"> <i class="far fa-comments fa-fw"></i>Testimonails</a>
@@ -75,7 +78,7 @@
                 <p>Here Iam gonna share everything about my life. Books Iam reading, Games Iam Playing, Stories and Events</p>
             </div>
             <div class="image">
-                <img src="./css imgs/landing-image.png" alt="">
+                <img src="./imgs/landing-image.png" alt="">
             </div>          
         </div>
         <a class="up-and-down" href="#articles  ">
@@ -88,8 +91,8 @@
 <div class="articles" id="articles">
     <h1 class="main-heading">articles</h1>
     <div class="container">
-        <div class="box">
-            <img src="./css imgs/cat-01.jpg" alt="">
+        <div class="hidden box">
+            <img src="./imgs/cat-01.jpg" alt="">
         <div class="text">
             <h2>Test Title</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
@@ -99,8 +102,8 @@
             <i class="fas fa-long-arrow-alt-right"></i>
         </div>
         </div>
-        <div class="box">
-            <img src="./css imgs/cat-02.jpg" alt="">
+        <div class="hidden box">
+            <img src="./imgs/cat-02.jpg" alt="">
         <div class="text">
             <h2>Test Title</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
@@ -110,8 +113,8 @@
             <i class="fas fa-long-arrow-alt-right"></i>
         </div>
         </div>
-        <div class="box">
-            <img src="./css imgs/cat-03.jpg" alt="">
+        <div class="hidden box">
+            <img src="imgs/cat-03.jpg" alt="">
         <div class="text">
             <h2>Test Title</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
@@ -121,8 +124,8 @@
             <i class="fas fa-long-arrow-alt-right"></i>
         </div>
         </div>
-        <div class="box">
-            <img src="./css imgs/cat-04.jpg" alt="">
+        <div class="hidden box">
+            <img src="./imgs/cat-04.jpg" alt="">
         <div class="text">
             <h2>Test Title</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
@@ -132,8 +135,8 @@
             <i class="fas fa-long-arrow-alt-right"></i>
         </div>
         </div>
-        <div class="box">
-            <img src="./css imgs/cat-05.jpg" alt="">
+        <div class="hidden box">
+            <img src="./imgs/cat-05.jpg" alt="">
         <div class="text">
             <h2>Test Title</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
@@ -143,8 +146,8 @@
             <i class="fas fa-long-arrow-alt-right"></i>
         </div>
         </div>
-        <div class="box">
-            <img src="./css imgs/cat-06.jpg" alt="">
+        <div class="hidden box">
+            <img src="./imgs/cat-06.jpg" alt="">
         <div class="text">
             <h2>Test Title</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
@@ -154,8 +157,8 @@
             <i class="fas fa-long-arrow-alt-right"></i>
         </div>
         </div>
-        <div class="box">
-            <img src="./css imgs/cat-07.jpg" alt="">
+        <div class="hidden box">
+            <img src="./imgs/cat-07.jpg" alt="">
         <div class="text">
             <h2>Test Title</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
@@ -165,8 +168,8 @@
             <i class="fas fa-long-arrow-alt-right"></i>
         </div>
         </div>
-        <div class="box">
-            <img src="./css imgs/cat-08.jpg" alt="">
+        <div class="hidden box">
+            <img src="./imgs/cat-08.jpg" alt="">
         <div class="text">
             <h2>Test Title</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
@@ -178,13 +181,10 @@
         </div>
         
     </div>
-
     <div class="spikes"></div>
 
 
 </div>
-
-
 
 <!-- End Articles -->
 
@@ -193,34 +193,34 @@
 <div class="gallery" id="gallery">
     <h1 class="main-heading">gallery</h1>
     <div class="container">
-        <div class="box">
+        <div class="box hidden">
             <div class="image">
-                <img src="./css imgs/gallery-01.png" alt="">
+                <img src="./imgs/gallery-01.png" alt="">
             </div>
         </div>
-        <div class="box">
+        <div class="box hidden">
             <div class="image">
-                <img src="./css imgs/gallery-02.png" alt="">
+                <img src="./imgs/gallery-02.png" alt="">
             </div>
         </div>
-        <div class="box">
+        <div class="box hidden">
             <div class="image">
-                <img src="./css imgs/gallery-03.jpg" alt="">
+                <img src="./imgs/gallery-03.jpg" alt="">
             </div>
         </div>
-        <div class="box">
+        <div class="box hidden">
             <div class="image">
-                <img src="./css imgs/gallery-04.png" alt="">
+                <img src="./imgs/gallery-04.png" alt="">
             </div>
         </div>
-        <div class="box">
+        <div class="box hidden">
             <div class="image">
-                <img src=".//css imgs/gallery-05.jpg" alt="">
+                <img src=".//imgs/gallery-05.jpg" alt="">
             </div>
         </div>
-        <div class="box">
+        <div class="box hidden">
             <div class="image">
-                <img src="./css imgs/gallery-06.png" alt="">
+                <img src="./imgs/gallery-06.png" alt="">
             </div>
         </div>
     </div>
@@ -231,25 +231,25 @@
     <div class="features" id="features">
         <h1 class="main-heading">features</h1>
         <div class="container">
-            <div class="box quality">
+            <div class="box quality hidden">
                 <div class="image-holder">
-                    <img src="./css imgs/features-01.jpg" alt="">
+                    <img src="./imgs/features-01.jpg" alt="">
                 </div>
                 <h2>Quality</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum hic veniam eligendi minima</p>
                     <a href="#" class="a-one">more</a>
             </div>
-            <div class="box time">
+            <div class="box time hidden">
                 <div class="image-holder">
-                    <img src="./css imgs/features-02.jpg" alt="">
+                    <img src="./imgs/features-02.jpg" alt="">
                 </div>
                 <h2>Time</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum hic veniam eligendi minima</p>
                     <a href="#" class="a-two">more</a>
             </div>
-            <div class="box passion">
+            <div class="box passion hidden">
                 <div class="image-holder">
-                    <img src="./css imgs/features-03.jpg" alt="">
+                    <img src="./imgs/features-03.jpg" alt="">
                 </div>
                 <h2>Passion</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum hic veniam eligendi minima</p>
@@ -267,12 +267,11 @@
     <div class="testimonialis" id="Testimonails">
         <h1 class="main-heading">testimonialis</h1>
         <div class="container">
-            <div class="box">
-                <img src="./css imgs/avatar-01.png" alt="">
+            <div class="box hidden">
+                <img src="./imgs/avatar-01.png" alt="">
                 <h3>Mohamed Farag</h3>
                 <span>Full Stack Developer</span>
                 <div class="star">
-
                     <i class="filled fas fa-star"></i>
                     <i class="filled fas fa-star"></i>
                     <i class="filled fas fa-star"></i>
@@ -281,8 +280,8 @@
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus</p>
             </div>
-            <div class="box">
-                <img src="./css imgs/avatar-02.png" alt="">
+            <div class="box hidden">
+                <img src="./imgs/avatar-02.png" alt="">
                 <h3>Mohamed Ibrahim</h3>
                 <span>Full Stack Developer</span>
                 <div class="star">
@@ -295,8 +294,8 @@
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus</p>
             </div>
-            <div class="box">
-                <img src="./css imgs/avatar-03.png" alt="">
+            <div class="box hidden">
+                <img src="./imgs/avatar-03.png" alt="">
                 <h3>Shady Nabil</h3>
                 <span>Full Stack Developer</span>
                 <div class="star">
@@ -309,8 +308,8 @@
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus</p>
             </div>
-            <div class="box">
-                <img src="./css imgs/avatar-04.png" alt="">
+            <div class="box hidden">
+                <img src="./imgs/avatar-04.png" alt="">
                 <h3>Amr Hendawy</h3>
                 <span>Full Stack Developer</span>
                 <div class="star">
@@ -323,8 +322,8 @@
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus</p>
             </div>
-            <div class="box">
-                <img src="./css imgs/avatar-05.png" alt="">
+            <div class="box hidden">
+                <img src="./imgs/avatar-05.png" alt="">
                 <h3>Sherief Ashraf</h3>
                 <span>Full Stack Developer</span>
                 <div class="star">
@@ -337,8 +336,8 @@
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus</p>
             </div>
-            <div class="box">
-                <img src="./css imgs/avatar-06.png" alt="">
+            <div class="box hidden">
+                <img src="./imgs/avatar-06.png" alt="">
                 <h3>Osama Mohamed</h3>
                 <span>Full Stack Developer</span>
                 <div class="star">
@@ -360,9 +359,9 @@
 <div class="team-members" id="Team-Members">
     <h1 class="main-heading">team members</h1>
     <div class="container">
-        <div class="box">
+        <div class="box hidden">
             <div class="data">
-                <img src="./css imgs/team-01.jpg" alt="">
+                <img src="./imgs/team-01.jpg" alt="">
                 <div class="social">
                     <a href="https://www.facebook.com/AhmedSaJunior" target="_blank"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://twitter.com/AhmedSaJunior" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -370,15 +369,15 @@
                     <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
-           <div class="info">
+        <div class="info">
             <h3>Name</h3>
             <p>Simple Short Description</p>
-           </div>
-
         </div>
-        <div class="box">
+
+</div>
+        <div class="box hidden">
             <div class="data">
-                <img src="./css imgs/team-02.jpg" alt="">
+                <img src="./imgs/team-02.jpg" alt="">
                 <div class="social">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -386,15 +385,15 @@
                     <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
-           <div class="info">
+        <div class="info">
             <h3>Name</h3>
             <p>Simple Short Description</p>
-           </div>
+        </div>
 
         </div>
-        <div class="box">
+        <div class="box hidden">
             <div class="data">
-                <img src="./css imgs/team-03.jpg" alt="">
+                <img src="./imgs/team-03.jpg" alt="">
                 <div class="social">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -402,15 +401,15 @@
                     <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
-           <div class="info">
+        <div class="info">
             <h3>Name</h3>
             <p>Simple Short Description</p>
-           </div>
+        </div>
 
         </div>
-        <div class="box">
+        <div class="box hidden">
             <div class="data">
-                <img src="./css imgs/team-04.jpg" alt="">
+                <img src="./imgs/team-04.jpg" alt="">
                 <div class="social">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -418,15 +417,15 @@
                     <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
-           <div class="info">
+        <div class="info">
             <h3>Name</h3>
             <p>Simple Short Description</p>
-           </div>
+        </div>
 
         </div>
-        <div class="box">
+        <div class="box hidden">
             <div class="data">
-                <img src="./css imgs/team-05.png" alt="">
+                <img src="./imgs/team-05.png" alt="">
                 <div class="social">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -434,15 +433,15 @@
                     <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
-           <div class="info">
+        <div class="info">
             <h3>Name</h3>
             <p>Simple Short Description</p>
-           </div>
+        </div>
 
         </div>
-        <div class="box">
+        <div class="box hidden">
             <div class="data">
-                <img src="./css imgs/team-06.png" alt="">
+                <img src="./imgs/team-06.png" alt="">
                 <div class="social">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -450,15 +449,15 @@
                     <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
-           <div class="info">
+        <div class="info">
             <h3>Name</h3>
             <p>Simple Short Description</p>
-           </div>
+        </div>
 
         </div>
-        <div class="box">
+        <div class="box hidden">
             <div class="data">
-                <img src="./css imgs/team-07.jpg" alt="">
+                <img src="./imgs/team-07.jpg" alt="">
                 <div class="social">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -466,15 +465,15 @@
                     <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
-           <div class="info">
+        <div class="info">
             <h3>Name</h3>
             <p>Simple Short Description</p>
-           </div>
+        </div>
 
         </div>
-        <div class="box">
+        <div class="box hidden">
             <div class="data">
-                <img src="./css imgs/team-08.jpg" alt="">
+                <img src="./imgs/team-08.jpg" alt="">
                 <div class="social">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -482,10 +481,10 @@
                     <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
-           <div class="info">
+        <div class="info">
             <h3>Name</h3>
             <p>Simple Short Description</p>
-           </div>
+        </div>
 
         </div>
     </div>
@@ -500,42 +499,42 @@
 <div class="servcies">
     <h1 class="main-heading" id="Services">services</h1>
     <div class="container">
-        <div class="box">
+        <div class="box hidden">
             <i class="fas fa-user-shield fa-4x"></i>
             <h1>Security</h1>
             <div class="info">
                 <a href="#">Details</a>
             </div>
         </div>
-        <div class="box">
+        <div class="box hidden">
             <i class="fas fa-tools fa-4x"></i>
             <h1>Fixing Issues</h1>
             <div class="info">
                 <a href="#">Details</a>
             </div>
         </div>
-        <div class="box">
+        <div class="box hidden">
             <i class="fas fa-map-marked-alt fa-4x"></i>
             <h1>Location</h1>
             <div class="info">
                 <a href="#">Details</a>
             </div>
         </div>
-        <div class="box">
+        <div class="box hidden">
             <i class="fas fa-laptop-code fa-4x"></i>
             <h1>Coding</h1>
             <div class="info">
                 <a href="#">Details</a>
             </div>
         </div>
-        <div class="box">
+        <div class="box hidden">
             <i class="fas fa-palette fa-4x"></i>
             <h1>Security</h1>
             <div class="info">
                 <a href="#">Details</a>
             </div>
         </div>
-        <div class="box">
+        <div class="box hidden">
             <i class="fas fa-bullhorn fa-4x"></i>
             <h1>Marketing</h1>
             <div class="info">
@@ -549,51 +548,51 @@
 
 <!-- End Services -->
 
-<!-- Start Skills -->
-<div class="our-skills" id="Our-Skills">
-    <h1 class="main-heading">our skills</h1>
-    <div class="container">
-      <img decoding="async" src="./css imgs/skills.png" alt="" />
-      <div class="skills">
-        <div class="skill">
-          <h3>HTML <span>80%</span></h3>
-          <div class="the-progress">
-            <span style="width: 80%"></span>
-          </div>
+    <!-- Start Skills -->
+    <div class="our-skills" id="Our-Skills">
+        <h1 class="main-heading">our skills</h1>
+        <div class="container">
+        <img decoding="async" src="./imgs/skills.png" alt="" class="hidden" />
+        <div class="skills">
+            <div class="skill">
+            <h3>HTML <span>80%</span></h3>
+            <div class="the-progress">
+                <span style="width: 0%" data-width = "80%"></span>
+            </div>
+            </div>
+            <div class="skill">
+            <h3>CSS <span>85%</span></h3>
+            <div class="the-progress">
+                <span style="width: 0%" data-width = "85%"></span>
+            </div>
+            </div>
+            <div class="skill">
+            <h3>JavaScript <span>70%</span></h3>
+            <div class="the-progress">
+                <span style="width: 0%" data-width = "70%"></span>
+            </div>
+            </div>
+            <div class="skill">
+            <h3>Python <span>80%</span></h3>
+            <div class="the-progress">
+                <span style="width: 0%" data-width = "80%"></span>
+            </div>
+            </div>
         </div>
-        <div class="skill">
-          <h3>CSS <span>85%</span></h3>
-          <div class="the-progress">
-            <span style="width: 85%"></span>
-          </div>
         </div>
-        <div class="skill">
-          <h3>JavaScript <span>70%</span></h3>
-          <div class="the-progress">
-            <span style="width: 70%"></span>
-          </div>
-        </div>
-        <div class="skill">
-          <h3>Python <span>80%</span></h3>
-          <div class="the-progress">
-            <span style="width: 80%"></span>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-  <!-- End Skills -->
+    <!-- End Skills -->
 
 
- <!-- Start Work Steps -->
- <div class="work-steps" id="work-steps">
+<!-- Start Work Steps -->
+<div class="work-steps" id="work-steps">
     <h1 class="main-heading">how it works ?</h1>
     <div class="container">
-      <img src="./css imgs/work-steps.png" alt="" class="image" />
-      <div class="info">
+    <img class="hidden"  src="./imgs/work-steps.png" alt="" class="image"/>
+    <div class="info">
         <div class="box">
-          <img src="./css imgs/work-steps-1.png" alt="" />
-          <div class="text">
+        <img src="./imgs/work-steps-1.png" alt=""/>
+        <div class="text">
             <h3>Business Analysis</h3>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt obcaecati quisquam quis laborum
@@ -602,7 +601,7 @@
           </div>
         </div>
         <div class="box">
-            <img src="./css imgs/work-steps-2.png" alt=""/>
+            <img src="./imgs/work-steps-2.png" alt=""/>
           <div class="text">
             <h3>Architecture</h3>
             <p>
@@ -612,7 +611,7 @@
           </div>
         </div>
         <div class="box">
-            <img src="./css imgs/work-steps-3.png" alt=""/>
+            <img src="./imgs/work-steps-3.png" alt=""/>
           <div class="text">
             <h3>Developement</h3>
             <p>
@@ -623,35 +622,35 @@
         </div>
       </div>
     </div>
-  </div>
-  <!-- End Work Steps -->
+</div>
+<!-- End Work Steps -->
 
 
 
-  <!--  Start Events-->
+<!--  Start Events-->
 
-  <div class="events" id="Events">
+<div class="events" id="Events">
     <div class="dots dots-up"></div>
     <div class="dots dots-down"></div>
     <h1 class="main-heading">latest events</h1>
     <div class="container">
-        <img src="./css imgs/events.png" alt="">
+        <img src="./imgs/events.png" alt="" class="hidden">
         <div class="info">
             <div class="time">
                 <div class="unit">
-                    <span>0- 446</span>
+                    <span class="days"></span>
                     <span>Days</span>
                 </div>
                 <div class="unit">
-                    <span>0- 15</span>
+                    <span class="hours"></span>
                     <span>Hours</span>
                 </div>
                 <div class="unit">
-                    <span>0- 47</span>
+                    <span class="minutes"></span>
                     <span>Minutes</span>
                 </div>
                 <div class="unit">
-                    <span>0- 9</span>
+                    <span class="seconds"></span>
                     <span>Seconds</span>
                 </div>
             </div>
@@ -665,19 +664,19 @@
             </div>
         </div>
     </div>
-  </div>
+</div>
 
-  <!--  End Events-->
+<!--  End Events-->
 
 <!-- Start Pricing -->
-  <div class="pricing" id="Pricing-Plans">
+<div class="pricing" id="Pricing-Plans">
     <div class="dots dots-up"></div>
     <div class="dots dots-down"></div>
     <h1 class="main-heading">pricing events</h1>
     <div class="container">
-        <div class="box">
+        <div class="box hidden event">
             <div class="title">Bsic</div>
-            <img src="./css imgs/hosting-basic.png" alt="">
+            <img src="./imgs/hosting-basic.png" alt="">
             <div class="price">
                 <span>$15</span>
                 <span>Per Month</span>              
@@ -692,10 +691,10 @@
             <a href="#">Choose Plan</a> 
         </div>
 
-        <div class="box popular">
+        <div class="box popular hidden event">
             <div class="lable">Most Poupular</div>
             <div class="title">Advanced</div>
-            <img src="./css imgs/hosting-advanced.png" alt="">
+            <img src="./imgs/hosting-advanced.png" alt="">
             <div class="price">
                 <span>$25</span>
                 <span>Per Month</span>
@@ -711,9 +710,9 @@
         </div>
 
 
-        <div class="box">
+        <div class="box hidden event">
             <div class="title">Professional</div>
-            <img src="./css imgs/hosting-professional.png" alt="">
+            <img src="./imgs/hosting-professional.png" alt="">
             <div class="price">
                 <span>$45</span>
                 <span>Per Month</span>
@@ -728,13 +727,13 @@
             <a href="#">Choose Plan</a> 
         </div>
     </div>
-  </div>
+</div>
 <!-- End Pricing -->
 
 
 <!-- Start Videos -->
 
-<div class="videos" id="Top-Videos">
+<div class="videos hidden" id="Top-Videos"> 
     <h1 class="main-heading">top videos</h1>
     <div class="container">
         <div class="holder">
@@ -768,7 +767,7 @@
                 </ul>
             </div>
             <div class="preview">
-                <img src="./css imgs/video-preview.jpg" alt="">
+                <img src="./imgs/video-preview.jpg" alt="">
                 <div class="info">Everything About The Virtual Hosts</div>
             </div>
         </div>
@@ -786,22 +785,22 @@
     <div class="container">
         <div class="box">
             <i class="far fa-user fa-2x fa-fw"></i>
-            <span class="number">150</span>
+            <span class="number" data-goal="150">0</span>
             <span>Clients</span>
         </div>
         <div class="box">
             <i class="fas fa-code fa-2x fa-fw"></i>
-            <span class="number">135</span>
+            <span class="number" data-goal="135">0</span>
             <span>Projects</span>
         </div>
         <div class="box">
             <i class="fas fa-globe-asia fa-2x fa-fw"></i>
-            <span class="number">50</span>
+            <span class="number" data-goal="50">0</span>
             <span>Countries</span>
         </div>
         <div class="box">
             <i class="far fa-money-bill-alt fa-2x fa-fw"></i>
-            <span class="number">500</span>
+            <span class="number" data-goal="500">0</span>
             <span>Money</span>
         </div>
     </div>
@@ -817,17 +816,21 @@
         <div class="content">
             <h2>We Have A Discount</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi asperiores consectetur, recusandae ratione provident necessitatibus, cumque delectus commodi fuga praesentium beatae. Totam vel similique laborum dicta aperiam odit doloribus corporis.</p>
-            <img src="./css imgs/discount.png" alt="">
+            <img src="./imgs/discount.png" alt="">
         </div>
     </div>
     <div class="form">
         <div class="content">
             <h2>Request A Discount</h2>
             <form action="">
-                <input class="input" type="text" placeholder="Your Name" name="name">
-                <input class="input" type="email" placeholder="Your Email" name="Email">
-                <input class="input" type="tel" placeholder="Your phone" name="tellphone">
-                <textarea class="input" name="message" placeholder="Tell Us About Your Needs"></textarea>
+                <input class="input userName" type="text" placeholder="Your Name" name="name" maxlength="20">
+                <span class="progress1"></span>
+                <input class="input email" type="email" placeholder="Your Email" name="Email" maxlength="35">
+                <span class="progress2"></span>
+                <input class="input tel" type="tel" placeholder="Your phone" name="tellphone" maxlength="13">
+                <span class="progress3"></span>
+                <textarea class="input textArea" name="message" placeholder="Tell Us About Your Needs" maxlength="300"></textarea>
+                <span class="progress4"></span>
                 <input type="submit" value="Send">
             </form>
         </div>
@@ -842,13 +845,13 @@
 <div class="footer">
     <div class="container">
         <div class="box">
-            <h1>Loly</h1>
+            <h1>Ahmed</h1>
             <ul class="social">
                 <a href="https://www.facebook.com/AhmedSaJunior" target="_blank"><i class="fab fa-facebook-f"></i></a> 
-                <a href="https://twitter.com/AhmedSaJunior" target="_blank"><i class="fab fa-twitter"></i></a> 
+                <a href="https://www.facebook.com/AhmedSaJunior" target="_blank"><i class="fab fa-twitter"></i></a> 
                 <a href="#"><i class="fab fa-youtube" target="_blank"></i></a> 
             </ul>
-           <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus nulla rem, dignissimos iste aspernatur</p>
+            <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus nulla rem, dignissimos iste aspernatur</p>
         </div>
         <div class="box">
             <ul class="links">
@@ -874,16 +877,15 @@
                     <span>+201032192342</span>
                     <span>+20153355317</span>
                 </div>
-               
             </div>
         </div>
         <div class="box footer-gallery">
-            <img src="./css imgs/gallery-01.png" alt="">
-            <img src="./css imgs/gallery-02.png" alt="">
-            <img src="./css imgs/gallery-03.jpg" alt="">
-            <img src="./css imgs/gallery-04.png" alt="">
-            <img src="./css imgs/gallery-05.jpg" alt="">
-            <img src="./css imgs/gallery-06.png" alt="">
+            <img src="./imgs/gallery-01.png" alt="">
+            <img src="./imgs/gallery-02.png" alt="">
+            <img src="./imgs/gallery-03.jpg" alt="">
+            <img src="./imgs/gallery-04.png" alt="">
+            <img src="./imgs/gallery-05.jpg" alt="">
+            <img src="./imgs/gallery-06.png" alt="">
         </div>
     </div>
     <p class="copyright">Made With &LT;3 By Ahmed Samir</p>
@@ -891,8 +893,5 @@
 
 
 <!-- End Footer -->
-
-<script src="./js/main.js"></script>
-
 </body>
 </html>
