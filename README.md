@@ -1,2 +1,2 @@
-# HTML_CSS_Template_Three
-HTML_CSS_Template_Three
+# Template-Three-After-JS
+After adding JavaScript to Template 3, which I created three months ago
