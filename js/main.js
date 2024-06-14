@@ -149,7 +149,6 @@ let maxLengthEmail = email.getAttribute("maxlength")
 let maxLengthTel = tel.getAttribute("maxlength")
 let maxLengthArea = textArea.getAttribute("maxlength")
 
-console.log(progress4)
 
 
 userName.oninput = function () {
